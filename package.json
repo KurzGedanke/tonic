@@ -1,0 +1,25 @@
+{
+  "name": "tonic3",
+  "version": "1.0.0",
+  "description": "Tonic is a beautifull, mobile optimized, Ghost Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KurzGedanke/working-title-tonic3.git"
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "cyberpunk",
+    "mobile"
+  ],
+  "author": "Thore Jahn (KurzGedanke)",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/KurzGedanke/working-title-tonic3/issues"
+  },
+  "homepage": "https://github.com/KurzGedanke/working-title-tonic3#readme"
+}
