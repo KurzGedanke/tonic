@@ -2,9 +2,15 @@
   "name": "tonic3",
   "version": "1.0.0",
   "description": "Tonic is a beautifull, mobile optimized, Ghost Theme",
+  "demo": "https://blog.kurzgedanke.me",
+  "engines": {
+    "ghost": ">=3.0.0",
+    "ghost-api": "v3"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp",
+    "test": "gscan ."
   },
   "repository": {
     "type": "git",
@@ -13,13 +19,70 @@
   "keywords": [
     "ghost",
     "theme",
-    "cyberpunk",
+    "ghost-theme",
     "mobile"
   ],
-  "author": "Thore Jahn (KurzGedanke)",
+  "author": {
+    "name": "Thore Jahn",
+    "nick": "KurzGedanke",
+    "email": "kontakt@kurzgedanke.me",
+    "url": "https://blog.kurzgedanke.me/"
+  },
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Mobile",
+      "Blog"
+    ]
+  },
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/KurzGedanke/working-title-tonic3/issues"
   },
-  "homepage": "https://github.com/KurzGedanke/working-title-tonic3#readme"
+  "homepage": "https://github.com/KurzGedanke/working-title-tonic3#readme",
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "autoprefixer": "^9.7.6",
+    "grunt": "^1.0.4",
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-compress": "^1.6.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-sass": "^2.1.0",
+    "gscan": "^3.5.3",
+    "load-grunt-tasks": "^5.1.0",
+    "normalize-scss": "^7.0.1",
+    "sass": "^1.26.5"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "config": {
+    "posts_per_page": 25,
+    "image_sizes": {
+      "xxs": {
+        "width": 30
+      },
+      "xs": {
+        "width": 100
+      },
+      "s": {
+        "width": 300
+      },
+      "m": {
+        "width": 600
+      },
+      "l": {
+        "width": 1000
+      },
+      "xl": {
+        "width": 2000
+      }
+    }
+  }
 }
