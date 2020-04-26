@@ -1,0 +1,10 @@
+.light-text {
+  color: $dark-text-transparent;
+  font-family: $font-helvetica;
+  font-size: rem(16px);
+  line-height: 1;
+
+  &--italic {
+    font-style: italic;
+  }
+}

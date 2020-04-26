@@ -1,8 +1,4 @@
-body {
-  background: grey;
-}
-
-html {
-  font-size: 15px;
-  box-shadow: grey;
-}
+@import "helpers";
+@import "variables";
+@import "tags";
+@import "compontens";

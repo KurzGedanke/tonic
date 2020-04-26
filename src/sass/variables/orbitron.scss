@@ -1,0 +1,15 @@
+$font-orbitron: "Orbitron", sans;
+
+/* orbitron-700 - latin */
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/font/orbitron-v15-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('assets/font/orbitron-v15-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('assets/font/orbitron-v15-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('assets/font/orbitron-v15-latin-700.woff') format('woff'), /* Modern Browsers */
+  url('assets/font/orbitron-v15-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('assets/font/orbitron-v15-latin-700.svg#Orbitron') format('svg'); /* Legacy iOS */
+}
