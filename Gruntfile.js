@@ -19,7 +19,13 @@ module.exports = function (grunt) {
           src: '*',
           cwd: 'src/font',
           expand: true
-        }]
+        },
+          {
+            dest: 'assets/img/',
+            src: '*',
+            cwd: 'src/img',
+            expand: true
+          }]
       },
       dist: {
         files: [{
@@ -27,7 +33,13 @@ module.exports = function (grunt) {
           src: '*',
           cwd: 'src/font/',
           expand: true
-        }]
+        },
+          {
+            dest: 'assets/img/',
+            src: '*',
+            cwd: 'src/img',
+            expand: true
+          }]
       }
     },
     clean: {

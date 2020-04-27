@@ -407,9 +407,9 @@ template {
   font-family: 'Orbitron';
   font-style: normal;
   font-weight: 700;
-  src: url("assets/font/orbitron-v15-latin-700.eot");
+  src: url("../font/orbitron-v15-latin-700.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("assets/font/orbitron-v15-latin-700.eot?#iefix") format("embedded-opentype"), url("assets/font/orbitron-v15-latin-700.woff2") format("woff2"), url("assets/font/orbitron-v15-latin-700.woff") format("woff"), url("assets/font/orbitron-v15-latin-700.ttf") format("truetype"), url("assets/font/orbitron-v15-latin-700.svg#Orbitron") format("svg");
+  src: local(""), url("../font/orbitron-v15-latin-700.eot?#iefix") format("embedded-opentype"), url("../font/orbitron-v15-latin-700.woff2") format("woff2"), url("../font/orbitron-v15-latin-700.woff") format("woff"), url("../font/orbitron-v15-latin-700.ttf") format("truetype"), url("../font/orbitron-v15-latin-700.svg#Orbitron") format("svg");
   /* Legacy iOS */ }
 
 /* vollkorn-600italic - latin */
@@ -417,10 +417,16 @@ template {
   font-family: 'Vollkorn';
   font-style: italic;
   font-weight: 600;
-  src: url("assets/font/vollkorn-v10-latin-600italic.eot");
+  src: url("../font/vollkorn-v10-latin-600italic.eot");
   /* IE9 Compat Modes */
-  src: local("Vollkorn SemiBold Italic"), local("Vollkorn-SemiBoldItalic"), url("assets/font/vollkorn-v10-latin-600italic.eot?#iefix") format("embedded-opentype"), url("assets/font/vollkorn-v10-latin-600italic.woff2") format("woff2"), url("assets/font/vollkorn-v10-latin-600italic.woff") format("woff"), url("assets/font/vollkorn-v10-latin-600italic.ttf") format("truetype"), url("assets/font/vollkorn-v10-latin-600italic.svg#Vollkorn") format("svg");
+  src: local("Vollkorn SemiBold Italic"), local("Vollkorn-SemiBoldItalic"), url("../font/vollkorn-v10-latin-600italic.eot?#iefix") format("embedded-opentype"), url("../font/vollkorn-v10-latin-600italic.woff2") format("woff2"), url("../font/vollkorn-v10-latin-600italic.woff") format("woff"), url("../font/vollkorn-v10-latin-600italic.ttf") format("truetype"), url("../font/vollkorn-v10-latin-600italic.svg#Vollkorn") format("svg");
   /* Legacy iOS */ }
+
+h1 {
+  color: #fafafa;
+  font-family: "Orbitron", "Helvetica Neue", sans;
+  font-size: 2.375rem;
+  font-weight: bold; }
 
 h2 {
   color: #fafafa;
@@ -452,12 +458,19 @@ h6 {
   font-size: 1.25rem;
   font-weight: bold; }
 
-a {
+body {
+  font-family: "Helvetica Neue", Helvetica, SansSerif;
+  font-size: 16px;
+  color: #fafafa;
+  background: #1a2133;
+  background: linear-gradient(34deg, #1a2133 0%, #36456c 100%);
+  background-attachment: fixed; }
+
+a, a:visited {
   color: #fafafa;
   font-family: "Helvetica Neue", Helvetica, SansSerif;
   font-size: 1rem;
-  line-height: 1.125;
-  box-shadow: 0px 0px 3px 0px rgba(54, 195, 227, 0.77); }
+  line-height: 1.125; }
 
 p {
   color: #fafafa;
@@ -471,3 +484,58 @@ blockquote {
   font-size: 1rem;
   font-style: italic;
   font-weight: 500; }
+
+img {
+  display: flex;
+  width: auto;
+  height: 100%; }
+
+.light-text {
+  color: rgba(250, 250, 250, 0.6);
+  font-family: "Helvetica Neue", Helvetica, SansSerif;
+  font-size: 1rem;
+  line-height: 1; }
+  .light-text--italic {
+    font-style: italic; }
+
+.header {
+  align-items: center;
+  background: linear-gradient(0deg, #f8599a 0%, #ef4662 100%);
+  background: #f8599a;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  height: 7.5rem;
+  justify-content: space-around;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5); }
+  .header .nav {
+    margin-left: 0.9375rem; }
+  .header__button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer; }
+  .header__hamburger {
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5)); }
+  .header__logo {
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+    display: flex;
+    height: 50%; }
+  .header nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-around; }
+    .header nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .header nav ul li {
+        margin-right: 0.3125rem;
+        margin-left: 0.3125rem; }
+        .header nav ul li a {
+          font-size: 1.375rem;
+          font-weight: bold;
+          text-decoration: none;
+          text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }

@@ -1,7 +1,9 @@
 a {
-  color: $dark-text-white;
-  font-family: $font-helvetica;
-  font-size: rem(16px);
-  line-height: 1.125;
-  box-shadow: 0px 0px 3px 0px $link-shadow;
+  &,
+  &:visited {
+    color: $dark-text-white;
+    font-family: $font-helvetica;
+    font-size: rem(16px);
+    line-height: 1.125;
+  }
 }
