@@ -1,0 +1,65 @@
+.post-card {
+  border-radius: rem(30px);
+  box-shadow: 0 0 4px $dark-shadow;
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 301px;
+  margin: rem(15px);
+  background: rgb(26, 33, 51);
+  background: linear-gradient(34deg, rgba(26, 33, 51, 1) 0%, rgba(54, 69, 108, 1) 100%);
+
+  &__image {
+    border-radius: rem(30px);
+    border: rem(4px) solid rgb(248, 89, 154);
+    object-fit: cover;
+    overflow: hidden;
+
+    &--link {
+      border-radius: rem(30px);
+      display: block;
+      margin: rem(15px) rem(15px) 0;
+      position: relative;
+    }
+  }
+
+  &__content {
+    margin-left: rem(15px);
+    margin-right: rem(15px);
+    margin-bottom: rem(15px);
+  }
+
+  &__byline {
+    font-size: rem(14px);
+    color: $dark-text-transparent;
+    margin-top: rem(5px);
+    margin-bottom: rem(5px);
+
+    a {
+      &,
+      &:visited {
+        font-size: rem(14px);
+        color: $dark-text-transparent;
+      }
+    }
+  }
+
+  &__header {
+    margin-top: rem(5px);
+    margin-bottom: rem(5px);
+  }
+  &__excerpt {
+    margin-bottom: rem(10px);
+  }
+  &__read-more {
+    font-size: rem(14px);
+    color: $dark-text-transparent;
+
+    a {
+      &,
+      &:visited {
+        font-size: rem(14px);
+        color: $dark-text-transparent;
+      }
+    }
+  }
+}

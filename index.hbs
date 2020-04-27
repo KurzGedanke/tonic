@@ -2,3 +2,14 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 {{> "header"}}
+<main>
+    <div class="inner">
+        <div class="content">
+            <div class="content__feed">
+                {{#foreach posts}}
+                    {{> "post-card"}}
+                {{/foreach}}
+            </div>
+        </div>
+    </div>
+</main>

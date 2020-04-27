@@ -1,6 +1,10 @@
 h2 {
   color: $dark-text-white;
   font-family: $font-helvetica;
-  font-size: rem(36px);
+  font-size: rem(24px);
   font-weight: bold;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0 0 rem(8px) $dark-shadow;
 }

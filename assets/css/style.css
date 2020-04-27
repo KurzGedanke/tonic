@@ -432,8 +432,12 @@ h1 {
 h2 {
   color: #fafafa;
   font-family: "Helvetica Neue", Helvetica, SansSerif;
-  font-size: 2.25rem;
-  font-weight: bold; }
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5); }
 
 h3 {
   color: #fafafa;
@@ -471,13 +475,16 @@ a, a:visited {
   color: #fafafa;
   font-family: "Helvetica Neue", Helvetica, SansSerif;
   font-size: 1rem;
-  line-height: 1.125; }
+  line-height: 1.125;
+  text-decoration: none; }
 
 p {
   color: #fafafa;
   font-family: "Helvetica Neue", Helvetica, SansSerif;
-  font-size: 1.125rem;
-  line-height: 1; }
+  font-size: 1rem;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0; }
 
 blockquote {
   color: #fafafa;
@@ -532,7 +539,7 @@ img {
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
     margin-right: 1.875rem;
     margin-top: 1.875rem;
-    position: fixed;
+    position: absolute;
     right: 0;
     width: 9.125rem;
     z-index: 10; }
@@ -572,3 +579,54 @@ img {
 
 .hidden {
   display: none !important; }
+
+.content {
+  margin: 0 auto;
+  max-width: 1040px;
+  width: 100%; }
+  .content__feed {
+    display: flex;
+    flex-wrap: wrap; }
+
+.post-card {
+  border-radius: 1.875rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 301px;
+  margin: 0.9375rem;
+  background: #1a2133;
+  background: linear-gradient(34deg, #1a2133 0%, #36456c 100%); }
+  .post-card__image {
+    border-radius: 1.875rem;
+    border: 0.25rem solid #f8599a;
+    object-fit: cover;
+    overflow: hidden; }
+    .post-card__image--link {
+      border-radius: 1.875rem;
+      display: block;
+      margin: 0.9375rem 0.9375rem 0;
+      position: relative; }
+  .post-card__content {
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+    margin-bottom: 0.9375rem; }
+  .post-card__byline {
+    font-size: 0.875rem;
+    color: rgba(250, 250, 250, 0.6);
+    margin-top: 0.3125rem;
+    margin-bottom: 0.3125rem; }
+    .post-card__byline a, .post-card__byline a:visited {
+      font-size: 0.875rem;
+      color: rgba(250, 250, 250, 0.6); }
+  .post-card__header {
+    margin-top: 0.3125rem;
+    margin-bottom: 0.3125rem; }
+  .post-card__excerpt {
+    margin-bottom: 0.625rem; }
+  .post-card__read-more {
+    font-size: 0.875rem;
+    color: rgba(250, 250, 250, 0.6); }
+    .post-card__read-more a, .post-card__read-more a:visited {
+      font-size: 0.875rem;
+      color: rgba(250, 250, 250, 0.6); }

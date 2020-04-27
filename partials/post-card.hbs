@@ -1,0 +1,31 @@
+<article class="post-card {{post_class}}">
+    {{#if feature_image}}
+        <a class="post-card__image--link" href="{{url}}">
+            <img alt="{{title}}"
+                 class="post-card__image"
+                 loading="lazy"
+                 sizes="(max-width: 1000px) 400px, 700px"
+                 src="{{img_url feature_image size="m"}}"
+                 srcset="{{img_url feature_image size="s"}} 300w,
+                    {{img_url feature_image size="m"}} 600w,
+                    {{img_url feature_image size="l"}} 1000w,
+                    {{img_url feature_image size="xl"}} 2000w"
+            />
+        </a>
+    {{/if}}
+    <div class="post-card__content">
+        <p class="post-card__byline">
+            <time datetime="{{date format="DD-MM-YYYY"}}">{{date format="D MMM YYYY"}}</time>
+            in {{#primary_tag}}<a title="{{name}}" href="{{url}}">{{name}}</a>{{/primary_tag}}
+            von {{#foreach authors}}<a title="{{name}}" href="{{url}}">{{name}}</a>{{/foreach}} {{reading_time}}</p>
+        <a class="post-card__content--link" href="{{url}}">
+            <header class="post-card__header">
+                <h2 class="post-card__title">{{title}}</h2>
+            </header>
+            <section class="post-card__excerpt">
+                <p>{{excerpt word="30"}}</p>
+            </section>
+        </a>
+        <a class="post-card__read-more" title="{{title}}" href="{{url}}">Mehr lesen...</a>
+    </div>
+</article>
