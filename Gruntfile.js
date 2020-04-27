@@ -160,20 +160,22 @@ module.exports = function (grunt) {
 
 
   grunt.registerTask('build', [
+    'clean',
     'sass:dist',
     'postcss:dist',
     'cssmin:dist',
     'babel:dist',
     'copy:dist',
-    'uglify'
+    // 'uglify'
   ]);
   grunt.registerTask('default', [
+    'clean',
     'sass:dev',
     'postcss:dev',
     'cssmin:dev',
     'babel:dev',
     'copy:dev',
-    'uglify',
+    // 'uglify',
     'watch'
   ]);
 };

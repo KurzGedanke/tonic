@@ -1,18 +1,17 @@
-<header>
-    <div class="header">
-        <nav class="header__navigation">
-            <button class="header__button"><img class="header__hamburger" src="{{asset "img/Hamburger.svg"}}" alt="Hamburger Navigation Icon"></button>
-            {{#if @site.navigation}}
-                {{navigation}}
-            {{/if}}
-            {{#is "post"}}
-                <span class="nav-post-title {{#unless @site.logo}}dash{{/unless}}">{{post.title}}</span>
-            {{/is}}
-        </nav>
-        {{#if @site.logo}}
-            <a class="header__logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}"/></a>
-        {{else}}
-            <a class="header__logo" href="{{@site.url}}">{{@site.title}}</a>
+<header id="header" class="header">
+    <button id="header__button" class="header__button"><img class="header__hamburger" src="{{asset "img/Hamburger.svg"}}"
+                                        alt="Hamburger Navigation Icon"></button>
+    {{#if @site.logo}}
+        <a class="header__logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}"/></a>
+    {{else}}
+        <a class="header__logo" href="{{@site.url}}">{{@site.title}}</a>
+    {{/if}}
+    <nav id="header__navigation" class="header__navigation hidden">
+        {{#if @site.navigation}}
+            {{navigation}}
         {{/if}}
-    </div>
+        {{#is "post"}}
+            <span class="nav-post-title {{#unless @site.logo}}dash{{/unless}}">{{post.title}}</span>
+        {{/is}}
+    </nav>
 </header>

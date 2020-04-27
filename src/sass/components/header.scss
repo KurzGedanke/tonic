@@ -1,13 +1,21 @@
 .header {
-  align-items: center;
   background: linear-gradient(0deg, rgba(248, 89, 154, 1) 0%, rgba(239, 70, 98, 1) 100%);
   background: rgb(248, 89, 154);
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  height: rem(120px);
-  justify-content: space-around;
+  height: rem(105px);
   box-shadow: 0 0 12px $dark-shadow;
+  display: inline-block;
+  width: 100%;
+/*  transition: height .5s ease-in;*/
+
+  &__menu {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+/*    transition: height .5s ease-in;*/
+  }
 
   .nav {
     margin-left: rem(15px);
@@ -16,9 +24,12 @@
   &__button {
     background: none;
     border: none;
-    margin: 0;
-    padding: 0;
     cursor: pointer;
+    display: inline-block;
+    margin-left: rem(30px);
+    margin-top: rem(30px);
+    position: fixed;
+    z-index: 10;
   }
 
   &__hamburger {
@@ -26,33 +37,61 @@
   }
 
   &__logo {
+    display: inline-block;
     filter: drop-shadow(0 0 4px $dark-shadow);
-    display: flex;
-    height: 50%;
+    margin-right: rem(30px);
+    margin-top: rem(30px);
+    position: fixed;
+    right: 0;
+    width: rem(146px);
+    z-index: 10;
   }
 
   nav {
-    align-items: center;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    z-index: 10;
+
+    /*    @include mq('tablet-wide') {
+          position: relative;
+          height: rem(105px);
+          margin-left: rem(80px);
+        }*/
 
     ul {
       display: flex;
       list-style: none;
-      margin: 0;
-      padding: 0;
+      flex-flow: column;
+
+      /*      @include mq('tablet-wide') {
+              flex-flow: row;
+              margin: 0;
+              padding: 0;
+            }*/
 
       li {
         margin-right: rem(5px);
         margin-left: rem(5px);
+        margin-bottom: rem(30px);
+        list-style-type: '— ';
+
+        /*        @include mq('tablet-wide'){
+                  margin-bottom: 0;
+                  list-style-type: none;
+                }*/
 
         a {
-          font-size: rem(22px);
+          font-size: rem(20px);
           font-weight: bold;
-          text-decoration: none;
           text-shadow: 0 0 4px $dark-shadow;
+          text-decoration: none;
         }
       }
     }
   }
+}
+
+.hidden {
+  display: none !important;
 }
