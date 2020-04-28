@@ -1,12 +1,11 @@
 .post-card {
+  background: rgb(26, 33, 51);
   border-radius: rem(30px);
   box-shadow: 0 0 4px $dark-shadow;
   display: flex;
   flex-flow: column;
   flex: 1 1 301px;
   margin: rem(15px);
-  background: rgb(26, 33, 51);
-  background: linear-gradient(34deg, rgba(26, 33, 51, 1) 0%, rgba(54, 69, 108, 1) 100%);
 
   &__image {
     border-radius: rem(30px);
@@ -16,49 +15,52 @@
 
     &--link {
       border-radius: rem(30px);
-      display: block;
+      display: flex;
+      height: rem(200px);
       margin: rem(15px) rem(15px) 0;
       position: relative;
     }
   }
 
   &__content {
+    margin-bottom: rem(15px);
     margin-left: rem(15px);
     margin-right: rem(15px);
-    margin-bottom: rem(15px);
   }
 
   &__byline {
-    font-size: rem(14px);
     color: $dark-text-transparent;
-    margin-top: rem(5px);
+    font-size: rem(14px);
     margin-bottom: rem(5px);
+    margin-top: rem(5px);
 
     a {
       &,
       &:visited {
-        font-size: rem(14px);
         color: $dark-text-transparent;
+        font-size: rem(14px);
       }
     }
   }
 
   &__header {
-    margin-top: rem(5px);
     margin-bottom: rem(5px);
+    margin-top: rem(5px);
   }
+
   &__excerpt {
     margin-bottom: rem(10px);
   }
+
   &__read-more {
-    font-size: rem(14px);
     color: $dark-text-transparent;
+    font-size: rem(14px);
 
     a {
       &,
       &:visited {
-        font-size: rem(14px);
         color: $dark-text-transparent;
+        font-size: rem(14px);
       }
     }
   }

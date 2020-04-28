@@ -10,12 +10,10 @@ headerButton.onclick = function () {
     header.classList.remove('header__menu');
     navigation.classList.add('hidden');
     navigation.setAttribute('aria-expanded', 'false');
-    console.log('PRESSED! FALSE');
   } else {
     header.classList.add('header__menu');
     navigation.setAttribute('aria-expanded', 'true');
     navigation.classList.remove('hidden');
-    console.log('PRESSED! TRUE');
   }
 };
 //# sourceMappingURL=script.js.map

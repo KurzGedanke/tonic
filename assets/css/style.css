@@ -589,14 +589,13 @@ img {
     flex-wrap: wrap; }
 
 .post-card {
+  background: #1a2133;
   border-radius: 1.875rem;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-flow: column;
   flex: 1 1 301px;
-  margin: 0.9375rem;
-  background: #1a2133;
-  background: linear-gradient(34deg, #1a2133 0%, #36456c 100%); }
+  margin: 0.9375rem; }
   .post-card__image {
     border-radius: 1.875rem;
     border: 0.25rem solid #f8599a;
@@ -604,29 +603,62 @@ img {
     overflow: hidden; }
     .post-card__image--link {
       border-radius: 1.875rem;
-      display: block;
+      display: flex;
+      height: 12.5rem;
       margin: 0.9375rem 0.9375rem 0;
       position: relative; }
   .post-card__content {
+    margin-bottom: 0.9375rem;
     margin-left: 0.9375rem;
-    margin-right: 0.9375rem;
-    margin-bottom: 0.9375rem; }
+    margin-right: 0.9375rem; }
   .post-card__byline {
-    font-size: 0.875rem;
     color: rgba(250, 250, 250, 0.6);
-    margin-top: 0.3125rem;
-    margin-bottom: 0.3125rem; }
+    font-size: 0.875rem;
+    margin-bottom: 0.3125rem;
+    margin-top: 0.3125rem; }
     .post-card__byline a, .post-card__byline a:visited {
-      font-size: 0.875rem;
-      color: rgba(250, 250, 250, 0.6); }
+      color: rgba(250, 250, 250, 0.6);
+      font-size: 0.875rem; }
   .post-card__header {
-    margin-top: 0.3125rem;
-    margin-bottom: 0.3125rem; }
+    margin-bottom: 0.3125rem;
+    margin-top: 0.3125rem; }
   .post-card__excerpt {
     margin-bottom: 0.625rem; }
   .post-card__read-more {
-    font-size: 0.875rem;
-    color: rgba(250, 250, 250, 0.6); }
+    color: rgba(250, 250, 250, 0.6);
+    font-size: 0.875rem; }
     .post-card__read-more a, .post-card__read-more a:visited {
-      font-size: 0.875rem;
-      color: rgba(250, 250, 250, 0.6); }
+      color: rgba(250, 250, 250, 0.6);
+      font-size: 0.875rem; }
+
+.footer {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  background-color: #1a2133;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5); }
+  .footer__inner {
+    display: flex;
+    flex-flow: column;
+    justify-content: center; }
+  .footer__icon {
+    display: flex;
+    flex-flow: row;
+    margin-left: 0.3125rem;
+    margin-right: 0.3125rem;
+    margin-top: 0.625rem; }
+    .footer__icon--link {
+      display: flex;
+      height: 2rem; }
+  .footer__text {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.625rem; }
+  .footer__disclaimer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.625rem; }
+  .footer__copyright {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.625rem; }

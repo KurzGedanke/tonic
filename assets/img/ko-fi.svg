@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="30px" viewBox="0 0 40 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>ko-fi</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-2.8%" y="-37.5%" width="105.6%" height="175.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dark-/-desktop-/-footer" transform="translate(-472.000000, -62.000000)" fill-rule="nonzero">
+            <g id="Icons" filter="url(#filter-1)" transform="translate(476.000000, 59.000000)">
+                <g id="ko-fi">
+                    <g id="Icon" fill="#FFFFFF">
+                        <path d="M31.8413333,11.9306667 C30.8106667,6.484 25.3626667,5.80666667 25.3626667,5.80666667 L0.964,5.80666667 C0.158666667,5.80666667 0.0586666667,6.87066667 0.0586666667,6.87066667 C0.0586666667,6.87066667 -0.0506666667,16.636 0.0293333333,22.6333333 C0.248,25.8653333 3.47733333,26.196 3.47733333,26.196 C3.47733333,26.196 14.5,26.1653333 19.432,26.1306667 C22.6826667,25.5626667 23.0093333,22.7093333 22.976,21.152 C28.7786667,21.472 32.872,17.3773333 31.8413333,11.9306667 Z M17.092,16.612 C15.4306667,18.5493333 11.744,21.9133333 11.744,21.9133333 C11.744,21.9133333 11.5826667,22.072 11.3306667,21.944 C11.2293333,21.868 11.1866667,21.824 11.1866667,21.824 C10.596,21.236 6.696,17.7586667 5.808,16.552 C4.86266667,15.2653333 4.42,12.952 5.68666667,11.6053333 C6.95466667,10.2586667 9.69333333,10.1573333 11.504,12.148 C11.504,12.148 13.5906667,9.772 16.128,10.864 C18.6666667,11.9573333 18.5706667,14.8786667 17.092,16.612 Z M25.3226667,17.2493333 C24.0853333,17.404 23.08,17.2866667 23.08,17.2866667 L23.08,9.712 L25.44,9.712 C25.44,9.712 28.068,10.4466667 28.068,13.2293333 C28.068,15.78 26.7546667,16.7853333 25.3226667,17.2493333 L25.3226667,17.2493333 Z" id="Icon-Shape"></path>
+                    </g>
+                    <rect id="ViewBox" x="0" y="0" width="32" height="32"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

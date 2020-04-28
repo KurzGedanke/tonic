@@ -125,11 +125,11 @@ module.exports = function (grunt) {
     watch: {
       css: {
         files: '<%=  config.cssSrcDir %>/**/*.scss',
-        tasks: ['sass:dev', 'copy:dev', 'postcss:dev']
+        tasks: ['sass:dev', 'copy:dev', 'postcss:dev', 'cssmin:dev']
       },
       js: {
         files: '<%=  config.jsSrcDir %>/**/*.js',
-        tasks: ['uglify']
+        tasks: ['babel:dev']
       }
     },
     compress: {

@@ -1,0 +1,44 @@
+.footer {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  background-color: $dark-background-blue;
+  box-shadow: 0 0 12px $dark-shadow;
+
+  &__inner {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  &__icon {
+    display: flex;
+    flex-flow: row;
+    margin-left: rem(5px);
+    margin-right: rem(5px);
+    margin-top: rem(10px);
+
+    &--link {
+      display: flex;
+      height: rem(32px);
+    }
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(10px);
+  }
+
+  &__disclaimer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: rem(10px);
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-around;
+    margin-top: rem(10px);
+  }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="34px" viewBox="0 0 39 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>twitter</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-3.2%" y="-37.5%" width="106.4%" height="175.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dark-/-desktop-/-footer" transform="translate(-530.000000, -60.000000)" fill-rule="nonzero">
+            <g id="Icons" filter="url(#filter-1)" transform="translate(533.000000, 59.000000)">
+                <g id="twitter">
+                    <g id="Icon" transform="translate(0.000000, 2.000000)" fill="#FFFFFF">
+                        <path d="M31.9386667,4.092 C30.7406421,4.61947382 29.4714723,4.96765314 28.172,5.12533333 C29.540149,4.30300055 30.5645413,3.01339354 31.056,1.49466667 C29.788,2.23466667 28.3826667,2.77333333 26.8866667,3.07333333 C24.8573031,0.903249332 21.622795,0.368049082 19.0025826,1.7687876 C16.3823703,3.16952612 15.0307416,6.15642784 15.708,9.04933333 C10.2546667,8.792 5.42133333,6.17333333 2.18666667,2.21466667 C1.59839173,3.21441829 1.29155199,4.35470111 1.29866667,5.51466667 C1.29866667,7.79466667 2.45866667,9.79866667 4.216,10.976 C3.17447758,10.9428471 2.15596204,10.6612468 1.24533333,10.1546667 L1.24533333,10.236 C1.2441152,13.3600069 3.44479671,16.0520216 6.50666667,16.672 C5.5443984,16.9298415 4.5365508,16.9685698 3.55733333,16.7853333 C4.42174591,19.4583075 6.88723319,21.2881446 9.696,21.3413333 C7.37532006,23.1625051 4.50995141,24.1509681 1.56,24.148 C1.04,24.148 0.521333333,24.1173333 0,24.0586667 C3.00761191,25.984433 6.50468395,27.0066683 10.076,27.0040052 C22.148,27.0040052 28.7413333,17.0093333 28.7413333,8.356 C28.7413333,8.07733333 28.7413333,7.796 28.7213333,7.516 C30.0093051,6.58912895 31.1202847,5.43840696 32.0013333,4.11866667 L31.9386667,4.092 Z" id="Icon-Path"></path>
+                    </g>
+                    <rect id="ViewBox" x="0" y="0" width="32" height="32"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

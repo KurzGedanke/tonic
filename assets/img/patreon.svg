@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>patreon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-3.2%" y="-37.5%" width="106.4%" height="175.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dark-/-desktop-/-footer" transform="translate(-700.000000, -57.000000)" fill-rule="nonzero">
+            <g id="Icons" filter="url(#filter-1)" transform="translate(533.000000, 59.000000)">
+                <g id="patreon" transform="translate(171.000000, 0.000000)">
+                    <g id="Icon" fill="#FFFFFF">
+                        <path d="M20.5146667,0.698666667 C14.1626667,0.698666667 8.99466667,5.86666667 8.99466667,12.2186667 C8.99466667,18.552 14.1626667,23.7026667 20.5146667,23.7026667 C26.848,23.7026667 32,18.5506667 32,12.2186667 C32,5.86666667 26.848,0.698666667 20.5146667,0.698666667 M0.004,31.3826667 L5.63066667,31.3826667 L5.63066667,0.698666667 L0.004,0.698666667" id="Icon-Shape"></path>
+                    </g>
+                    <rect id="ViewBox" x="0" y="0" width="32" height="32"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

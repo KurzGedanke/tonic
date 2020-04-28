@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="32px" viewBox="0 0 40 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>youtube</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-3.2%" y="-37.5%" width="106.4%" height="175.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dark-/-desktop-/-footer" transform="translate(-871.000000, -61.000000)" fill-rule="nonzero">
+            <g id="Icons" filter="url(#filter-1)" transform="translate(533.000000, 59.000000)">
+                <g id="youtube" transform="translate(342.000000, 0.000000)">
+                    <g id="Icon" transform="translate(0.000000, 4.000000)" fill="#FFFFFF">
+                        <path d="M31.3266667,4.27333333 C30.949588,2.92220902 29.893791,1.86641203 28.5426667,1.48933333 C26.0493333,0.821314418 16.0146667,0.821314418 16.0146667,0.821314418 C16.0146667,0.821314418 6.00533333,0.808 3.48666667,1.48933333 C2.13554235,1.86641203 1.07974536,2.92220902 0.702666667,4.27333333 C0.230027458,6.82601407 -0.00298593558,9.41728372 0.00637867678,12.0133333 C-0.00116115844,14.599587 0.231844597,17.1809515 0.702666667,19.724 C1.07974536,21.0751243 2.13554235,22.1309213 3.48666667,22.508 C5.97733333,23.1773333 16.0146667,23.1773333 16.0146667,23.1773333 C16.0146667,23.1773333 26.0226667,23.1773333 28.5426667,22.508 C29.893791,22.1309213 30.949588,21.0751243 31.3266667,19.724 C31.7876523,17.1800304 32.0108373,14.5986733 31.9933333,12.0133333 C32.0126619,9.41820078 31.7894696,6.82693863 31.3266667,4.27333333 L31.3266667,4.27333333 Z M12.812,16.8013333 L12.812,7.21066667 L21.164,12.0133333 L12.812,16.8013333 Z" id="Icon-Shape"></path>
+                    </g>
+                    <rect id="ViewBox" x="0" y="0" width="32" height="32"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
