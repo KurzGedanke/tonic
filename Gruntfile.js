@@ -14,38 +14,66 @@ module.exports = function (grunt) {
     },
     copy: {
       dev: {
-        files: [{
-          dest: 'assets/font/',
-          src: '*',
-          cwd: 'src/font',
-          expand: true
-        },
+        files: [
+          {
+            dest: 'assets/font/',
+            src: '*',
+            cwd: 'src/font',
+            expand: true
+          },
           {
             dest: 'assets/img/',
             src: '*',
             cwd: 'src/img',
             expand: true
-          }]
+          },
+          {
+            dest: 'assets/js/libs/',
+            src: '*',
+            cwd: 'src/js/libs',
+            expand: true
+          },
+          {
+            dest: 'assets/css/libs/',
+            src: '*',
+            cwd: 'src/sass/libs',
+            expand: true
+          }
+        ]
       },
       dist: {
-        files: [{
-          dest: 'assets/font/',
-          src: '*',
-          cwd: 'src/font/',
-          expand: true
-        },
+        files: [
+          {
+            dest: 'assets/font/',
+            src: '*',
+            cwd: 'src/font/',
+            expand: true
+          },
           {
             dest: 'assets/img/',
             src: '*',
             cwd: 'src/img',
             expand: true
-          }]
+          },
+          {
+            dest: 'assets/js/libs/',
+            src: '*',
+            cwd: 'src/js/libs',
+            expand: true
+          },
+          {
+            dest: 'assets/css/libs/',
+            src: '*',
+            cwd: 'src/sass/libs',
+            expand: true
+          }
+        ]
       }
     },
     clean: {
-      dev: ['dev'],
-      dist: ['dist'],
-      all: ['dev', 'dist']
+      dev: ['assets'],
+      dist: ['assets', 'dist'],
+      all: ['assets', 'dist']
     },
     sass: {
       dev: {
@@ -79,22 +107,40 @@ module.exports = function (grunt) {
     },
     cssmin: {
       dev: {
-        files: [{
-          expand: true,
-          cwd: '<%=  config.cssTargetDir %>',
-          src: ['*.css', '!*.min.css'],
-          dest: '<%=  config.cssTargetDir %>',
-          ext: '.min.css'
-        }]
+        files: [
+          {
+            expand: true,
+            cwd: '<%=  config.cssTargetDir %>',
+            src: ['*.css', '!*.min.css'],
+            dest: '<%=  config.cssTargetDir %>',
+            ext: '.min.css'
+          },
+          {
+            expand: true,
+            cwd: '<%=  config.cssTargetDir %>/libs',
+            src: ['*.css', '!*.min.css'],
+            dest: '<%=  config.cssTargetDir %>/libs',
+            ext: '.min.css'
+          },
+        ]
       },
       dist: {
-        files: [{
-          expand: true,
-          cwd: '<%=  config.cssTargetDir %>',
-          src: ['*.css', '!*.min.css'],
-          dest: '<%=  config.cssTargetDir %>',
-          ext: '.min.css'
-        }]
+        files: [
+          {
+            expand: true,
+            cwd: '<%=  config.cssTargetDir %>',
+            src: ['*.css', '!*.min.css'],
+            dest: '<%=  config.cssTargetDir %>',
+            ext: '.min.css'
+          },
+          {
+            expand: true,
+            cwd: '<%=  config.cssTargetDir %>/libs',
+            src: ['*.css', '!*.min.css'],
+            dest: '<%=  config.cssTargetDir %>/libs',
+            ext: '.min.css'
+          },
+        ]
       }
     },
     babel: {
@@ -117,7 +163,7 @@ module.exports = function (grunt) {
       js: {
         files: {
           '<%= config.jsTargetDir %>/script.js': [
-            '<%= config.jsSrcDir %>/script.js'
+            '<%= config.jsTargetDir %>/script.js'
           ]
         }
       }
@@ -160,22 +206,22 @@ module.exports = function (grunt) {
 
 
   grunt.registerTask('build', [
-    'clean',
+    'clean:dist',
     'sass:dist',
     'postcss:dist',
     'cssmin:dist',
     'babel:dist',
     'copy:dist',
-    // 'uglify'
+    'uglify'
   ]);
   grunt.registerTask('default', [
-    'clean',
+    'clean:dev',
     'sass:dev',
     'postcss:dev',
     'cssmin:dev',
     'babel:dev',
     'copy:dev',
-    // 'uglify',
+    'uglify',
     'watch'
   ]);
 };

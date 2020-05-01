@@ -58,7 +58,6 @@
     "gscan": "^3.5.3",
     "load-grunt-tasks": "^5.1.0",
     "normalize-scss": "^7.0.1",
-    "prismjs": "^1.20.0",
     "sass": "^1.26.5",
     "sass-rem": "^2.0.1"
   },

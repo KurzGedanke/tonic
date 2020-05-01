@@ -10,7 +10,7 @@
 
   &__post {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     max-width: 768px;
   }
 }

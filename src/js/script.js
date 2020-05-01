@@ -1,7 +1,3 @@
-import Prism from 'prismjs';
-
-Prism.highlightAll();
-
 let headerButton = document.getElementById('header__button')
 
 headerButton.onclick = function () {
