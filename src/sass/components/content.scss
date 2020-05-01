@@ -7,4 +7,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  &__post {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+  }
 }

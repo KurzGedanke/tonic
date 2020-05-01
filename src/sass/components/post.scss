@@ -1,0 +1,48 @@
+.post {
+  &__image {
+    align-items: center;
+    background: no-repeat scroll center center / cover #000;
+    border-radius: rem(30px);
+    border: rem(4px) solid rgb(248, 89, 154);
+    box-shadow: 0 0 4px $dark-shadow;
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(20px);
+    object-fit: cover;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: column;
+    margin-left: rem(15px);
+    margin-right: rem(15px);
+
+    a {
+      &,
+      &:visited {
+        color: $dark-text-white;
+        font-family: $font-helvetica;
+        font-size: rem(16px);
+        line-height: 1.125;
+        text-decoration: none;
+        box-shadow: 0 rem(3px) 0 $dark-pink;
+        transition: box-shadow 0.5s ease-in-out;
+      }
+
+      &:hover {
+        box-shadow: 0 rem(5px) rem(2px) $dark-pink;
+      }
+    }
+  }
+
+  &__header {
+    margin-left: rem(15px);
+    margin-right: rem(15px);
+  }
+
+  img {
+
+  }
+}

@@ -1,6 +1,9 @@
 h5 {
   color: $dark-text-white;
   font-family: $font-helvetica;
-  font-size: rem(22px);
+  font-size: rem(26px);
   font-weight: bold;
+  margin: rem(20px) 0;
+  padding: 0;
+  text-shadow: 0 0 rem(8px) $dark-shadow;
 }

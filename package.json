@@ -44,6 +44,7 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "autoprefixer": "^9.7.6",
+    "babel-plugin-prismjs": "^2.0.1",
     "grunt": "^1.0.4",
     "grunt-babel": "^8.0.0",
     "grunt-contrib-clean": "^1.1.0",
@@ -57,6 +58,7 @@
     "gscan": "^3.5.3",
     "load-grunt-tasks": "^5.1.0",
     "normalize-scss": "^7.0.1",
+    "prismjs": "^1.20.0",
     "sass": "^1.26.5",
     "sass-rem": "^2.0.1"
   },

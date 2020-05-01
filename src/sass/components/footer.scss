@@ -1,9 +1,10 @@
 .footer {
-  display: flex;
-  height: 150px;
-  justify-content: center;
   background-color: $dark-background-blue;
   box-shadow: 0 0 12px $dark-shadow;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  margin-top: rem(30px);
 
   &__inner {
     display: flex;
@@ -27,7 +28,6 @@
   &__text {
     display: flex;
     justify-content: center;
-    margin-top: rem(10px);
   }
 
   &__disclaimer {
@@ -40,5 +40,6 @@
     display: flex;
     justify-content: space-around;
     margin-top: rem(10px);
+    margin-bottom: rem(15px);
   }
 }

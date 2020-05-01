@@ -16,9 +16,13 @@
     &--link {
       border-radius: rem(30px);
       display: flex;
-      height: rem(200px);
+      height: rem(300px);
       margin: rem(15px) rem(15px) 0;
       position: relative;
+
+      @include mq('tablet') {
+        height: rem(200px);
+      }
     }
   }
 

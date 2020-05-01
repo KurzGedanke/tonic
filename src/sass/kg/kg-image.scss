@@ -1,0 +1,20 @@
+.kg-image {
+  border-radius: rem(30px);
+  box-shadow: 0 0 12px $dark-shadow;
+  height: 75%;
+  margin: rem(15px) 0;
+  width: 75%;
+
+  &-card {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: rem(25px) 0;
+
+    figcaption {
+      color: $dark-text-transparent;
+      font-size: rem(16px);
+    }
+  }
+}

@@ -1,7 +1,12 @@
 blockquote {
   color: $dark-text-white;
   font-family: $font-vollkorn;
-  font-size: rem(16px);
+  font-size: rem(20px);
   font-style: italic;
   font-weight: 500;
+  border-left: rem(2px) solid $dark-pink;
+  margin: rem(20px) 0;
+  padding-top: rem(10px);
+  padding-bottom: rem(10px);
+  padding-left: rem(30px);
 }
