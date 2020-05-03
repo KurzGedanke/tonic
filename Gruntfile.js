@@ -34,7 +34,7 @@ module.exports = function (grunt) {
             expand: true
           },
           {
-            dest: 'assets/css/libs/',
+            dest: 'assets/css/',
             src: '*',
             cwd: 'src/sass/libs',
             expand: true
@@ -62,7 +62,7 @@ module.exports = function (grunt) {
             expand: true
           },
           {
-            dest: 'assets/css/libs/',
+            dest: 'assets/css/',
             src: '*',
             cwd: 'src/sass/libs',
             expand: true
@@ -114,14 +114,7 @@ module.exports = function (grunt) {
             src: ['*.css', '!*.min.css'],
             dest: '<%=  config.cssTargetDir %>',
             ext: '.min.css'
-          },
-          {
-            expand: true,
-            cwd: '<%=  config.cssTargetDir %>/libs',
-            src: ['*.css', '!*.min.css'],
-            dest: '<%=  config.cssTargetDir %>/libs',
-            ext: '.min.css'
-          },
+          }
         ]
       },
       dist: {
@@ -132,14 +125,7 @@ module.exports = function (grunt) {
             src: ['*.css', '!*.min.css'],
             dest: '<%=  config.cssTargetDir %>',
             ext: '.min.css'
-          },
-          {
-            expand: true,
-            cwd: '<%=  config.cssTargetDir %>/libs',
-            src: ['*.css', '!*.min.css'],
-            dest: '<%=  config.cssTargetDir %>/libs',
-            ext: '.min.css'
-          },
+          }
         ]
       }
     },
@@ -207,21 +193,30 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'copy:dist',
     'sass:dist',
     'postcss:dist',
     'cssmin:dist',
     'babel:dist',
-    'copy:dist',
     'uglify'
   ]);
-  grunt.registerTask('default', [
+  grunt.registerTask('devWatch', [
     'clean:dev',
+    'copy:dev',
     'sass:dev',
     'postcss:dev',
     'cssmin:dev',
     'babel:dev',
-    'copy:dev',
     'uglify',
     'watch'
+  ]);
+  grunt.registerTask('default', [
+    'clean:dev',
+    'copy:dev',
+    'sass:dev',
+    'postcss:dev',
+    'cssmin:dev',
+    'babel:dev',
+    'uglify'
   ]);
 };

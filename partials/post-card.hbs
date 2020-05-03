@@ -17,7 +17,7 @@
         <p class="post-card__byline">
             <time datetime="{{date format="DD-MM-YYYY"}}">{{date format="D MMM YYYY"}}</time>
             in {{#primary_tag}}<a title="{{name}}" href="{{url}}">{{name}}</a>{{/primary_tag}}
-            von {{#foreach authors}}<a title="{{name}}" href="{{url}}">{{name}}</a>{{/foreach}} {{reading_time}}</p>
+            von {{#foreach authors}}<a title="{{name}}" href="{{url}}">{{name}}</a>{{/foreach}} {{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</p>
         <a class="post-card__content--link" href="{{url}}">
             <header class="post-card__header">
                 <h2 class="post-card__title">{{title}}</h2>

@@ -1,0 +1,13 @@
+.kg-width {
+  &-full {
+    .kg-image {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+  &-wide {
+    width: 90% !important;
+    height: 90% !important;
+  }
+}

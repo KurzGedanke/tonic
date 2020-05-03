@@ -1,0 +1,16 @@
+.kg-gallery {
+  &-container {
+    display: flex;
+  }
+
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &-image {
+    margin: rem(10px);
+    flex-basis: 35%;
+  }
+}
