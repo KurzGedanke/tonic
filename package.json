@@ -1,7 +1,7 @@
 {
   "name": "tonic2",
-  "version": "1.0.1",
-  "description": "Tonic2 is a beautifull, mobile optimized, Ghost Theme",
+  "version": "1.0.2",
+  "description": "Tonic2 is a beautiful, mobile optimized, Ghost Theme",
   "demo": "https://blog.kurzgedanke.me",
   "engines": {
     "ghost": ">=3.0.0",
@@ -65,7 +65,7 @@
     "defaults"
   ],
   "config": {
-    "posts_per_page": 25,
+    "posts_per_page": 15,
     "image_sizes": {
       "xxs": {
         "width": 30

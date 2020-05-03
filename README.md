@@ -34,9 +34,12 @@ $ grunt compress
 
 ## TODO
 
-- [ ] Pagination
+- [ ] Pagination Index
+- [ ] Pagination Post
+- [ ] Author on Post
 - [ ] Different views for Tags
-- [ ] Next post
+- [ ] Diffrent RSS for Tags
+
 
 ## Thank goes to:
 

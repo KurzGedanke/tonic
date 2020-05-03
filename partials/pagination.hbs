@@ -1,0 +1,9 @@
+<nav class="pagination" role="navigation" aria-label="Pagination Navigation">
+            {{#if prev}}
+                <a class="pagination__button" title="{{t "Newer Posts"}}" href="{{page_url prev}}">{{t "Newer Posts"}}</a>
+            {{/if}}
+            <span class="pagination__info">{{t "Page {page} of {pages}" page=page pages=pages}}</span>
+            {{#if next}}
+                <a class="pagination__button" title="{{t "Older Posts"}}" href="{{page_url next}}">{{t "Older Posts"}}</a>
+            {{/if}}
+</nav>

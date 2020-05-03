@@ -1,0 +1,36 @@
+.pagination {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+
+  @include mq ("tablet") {
+    flex-flow: row;
+  }
+
+  &__button {
+    align-items: center;
+    background: $dark-background-blue;
+    border-radius: rem(30px);
+    border: rem(4px) solid rgb(248, 89, 154);
+    box-shadow: 0 0 4px $dark-shadow;
+    display: flex;
+    justify-content: center;
+    height: rem(50px);
+    width: rem(150px);
+    margin: rem(15px);
+  }
+
+  &__info {
+    align-items: center;
+    background: $dark-background-blue;
+    border-radius: rem(30px);
+    border: rem(4px) solid rgb(248, 89, 154);
+    box-shadow: 0 0 4px $dark-shadow;
+    display: flex;
+    justify-content: center;
+    height: rem(50px);
+    width: rem(150px);
+    margin: rem(15px);
+  }
+}
