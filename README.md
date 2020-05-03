@@ -4,7 +4,19 @@ A beautiful Ghost theme named Tonic.
 
 ## Usage
 
-To build tonic uses grunt. 
+Clone the repository. 
+
+```bash
+git clone
+```
+
+Install its dependencies
+
+```bash
+npm install
+```
+
+Tonic uses grunt to be build.
 
 ```bash
 $ grunt
@@ -19,6 +31,12 @@ $ grunt compress
 - `grunt dev` is used to build for development
 - `grunt dist` is used for a distribute build in development
 - `grunt compress` is used to zip an archive for uploading
+
+## TODO
+
+- [ ] Pagination
+- [ ] Different views for Tags
+- [ ] Next post
 
 ## Thank goes to:
 
