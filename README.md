@@ -34,11 +34,12 @@ $ grunt compress
 
 ## TODO
 
-- [ ] Pagination Index
+- [X] Pagination Index - DONE 04 May 2020
 - [ ] Pagination Post
 - [ ] Author on Post
 - [ ] Different views for Tags
-- [ ] Diffrent RSS for Tags
+- [ ] Different RSS for Tags
+- [ ] Lightbox for images
 
 
 ## Thank goes to:
