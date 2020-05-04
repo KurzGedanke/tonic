@@ -42,7 +42,38 @@
     margin-right: rem(15px);
   }
 
+  &__tags {
+    display: flex;
+    align-items: center;
+    color: $dark-text-transparent;
+
+
+    &__ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      align-items: center;
+    }
+
+    &__li {
+      margin: 0 0 0 rem(10px);
+      text-decoration: underline;
+      text-decoration-color: $dark-pink;
+
+      a {
+        color: $dark-text-transparent;
+      }
+    }
+
+    &__text {
+      padding: 0;
+      margin: 0;
+      color: $dark-text-transparent;
+    }
+  }
+
   img {
 
   }
+
 }

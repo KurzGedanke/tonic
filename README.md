@@ -35,13 +35,13 @@ $ grunt compress
 ## TODO
 
 - [X] Pagination Index - DONE 04 May 2020
-- [ ] Pagination Post
+- [ ] Pagination Post - DONE 04 May 2020
 - [X] Author on Post
 - [ ] Different views for Tags
 - [ ] Different RSS for Tags
 - [ ] Lightbox for images
-- [ ] Background color for Body
-- [ ] Tags in Post
+- [X] Background color for Body - DONE 04 May 2020
+- [X] Tags in Post - DONE 04 May 2020
 
 
 ## Thank goes to:

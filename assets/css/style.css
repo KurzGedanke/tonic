@@ -452,6 +452,7 @@ body {
   font-size: 16px;
   color: #fafafa;
   background: #1a2133;
+  background-color: #1a2133;
   background: linear-gradient(34deg, #1a2133 0%, #36456c 100%);
   background-attachment: fixed; }
 
@@ -759,6 +760,26 @@ ul {
 .post__header {
   margin-left: 0.9375rem;
   margin-right: 0.9375rem; }
+
+.post__tags {
+  display: flex;
+  align-items: center;
+  color: rgba(250, 250, 250, 0.6); }
+  .post__tags__ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    align-items: center; }
+  .post__tags__li {
+    margin: 0 0 0 0.625rem;
+    text-decoration: underline;
+    text-decoration-color: #f8599a; }
+    .post__tags__li a {
+      color: rgba(250, 250, 250, 0.6); }
+  .post__tags__text {
+    padding: 0;
+    margin: 0;
+    color: rgba(250, 250, 250, 0.6); }
 
 .post-card {
   background: #1a2133;
