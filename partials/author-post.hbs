@@ -1,0 +1,12 @@
+{{#foreach authors}}
+    <hr/>
+    <a class="author-post" href="{{url}}" title="{{name}}">
+        <h4 class="author-post__name">{{name}}</h4>
+        <div class="author-post__inner">
+            <div class="author-post__image">
+                <img src="{{img_url profile_image size="xs"}}" alt="{{name}}"/>
+            </div>
+            <p>{{bio}}</p>
+        </div>
+    </a>
+{{/foreach}}

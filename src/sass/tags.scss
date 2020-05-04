@@ -1,17 +1,16 @@
+@import "tags/a";
+@import "tags/blockquote";
+@import "tags/body";
+@import "tags/figure";
 @import "tags/h1";
 @import "tags/h2";
 @import "tags/h3";
 @import "tags/h4";
 @import "tags/h5";
 @import "tags/h6";
-
-@import "tags/body";
-@import "tags/a";
-@import "tags/p";
-@import "tags/blockquote";
+@import "tags/hr";
 @import "tags/img";
-@import "tags/figure";
-
-@import "tags/ul";
-@import "tags/ol";
 @import "tags/li";
+@import "tags/ol";
+@import "tags/p";
+@import "tags/ul";
