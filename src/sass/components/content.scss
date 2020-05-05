@@ -1,6 +1,6 @@
 .content {
   margin: 0 auto;
-  max-width: 1040px;
+  max-width: rem(1040px);
   width: 100%;
 
   &__feed {
@@ -11,6 +11,6 @@
   &__post {
     display: flex;
     flex-direction: column;
-    max-width: 768px;
+    max-width: rem(768px);
   }
 }

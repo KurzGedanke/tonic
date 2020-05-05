@@ -43,22 +43,25 @@
   }
 
   &__tags {
-    display: flex;
     align-items: center;
     color: $dark-text-transparent;
+    display: flex;
+    margin-left: rem(15px);
+    margin-right: rem(15px);
 
 
     &__ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
       align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
     }
 
     &__li {
       margin: 0 0 0 rem(10px);
-      text-decoration: underline;
       text-decoration-color: $dark-pink;
+      text-decoration: underline;
 
       a {
         color: $dark-text-transparent;
@@ -66,9 +69,9 @@
     }
 
     &__text {
-      padding: 0;
-      margin: 0;
       color: $dark-text-transparent;
+      margin: 0;
+      padding: 0;
     }
   }
 

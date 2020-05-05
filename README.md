@@ -44,6 +44,7 @@ $ grunt compress
 - [ ] Lightbox for images
 - [ ] Cookie Layer
 - [ ] Opt-In with third party media
+- [ ] Tag Margin
 
 ## Thank goes to:
 
