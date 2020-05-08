@@ -586,7 +586,7 @@ ul {
   display: flex;
   height: 200px;
   justify-content: center;
-  margin-top: 1.875rem; }
+  margin-top: 2.5rem; }
   .footer__inner {
     display: flex;
     flex-flow: column;
@@ -830,13 +830,33 @@ ul {
       color: rgba(250, 250, 250, 0.6);
       font-size: 0.875rem; }
 
-.post-pagination {
-  margin: 0;
-  max-width: 48rem;
+.pagination-post {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  flex-wrap: wrap;
+  margin-top: 1.875rem; }
+  @media only screen and (min-width: 480px) {
+    .pagination-post {
+      flex-wrap: nowrap; } }
+  .pagination-post__next {
+    margin: 0 0.9375rem;
+    border-top: 2px solid rgba(250, 250, 250, 0.6);
+    border-bottom: 2px solid rgba(250, 250, 250, 0.6);
+    display: flex;
+    flex-flow: row;
+    align-items: center; }
+    .pagination-post__next .pagination-post__icon {
+      rotate: 180deg; }
+  .pagination-post__prev {
+    margin: 0 0.9375rem;
+    border-top: 2px solid rgba(250, 250, 250, 0.6);
+    border-bottom: 2px solid rgba(250, 250, 250, 0.6);
+    display: flex;
+    flex-flow: row;
+    align-items: center; }
+  .pagination-post__icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px; }
 
 .kg-card {
   display: block; }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="27px" viewBox="0 0 20 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon Path</title>
+    <defs>
+        <path d="M361.057146,195.562168 L352.499031,204.059513 C351.907514,204.646829 350.951019,204.646829 350.365795,204.059513 L348.943638,202.647454 C348.352121,202.060137 348.352121,201.110434 348.943638,200.529366 L355.009831,194.506248 L348.943638,188.48313 C348.352121,187.895814 348.352121,186.946111 348.943638,186.365042 L350.359502,184.940487 C350.951019,184.353171 351.907514,184.353171 352.492738,184.940487 L361.050853,193.437832 C361.648663,194.025148 361.648663,194.974852 361.057146,195.562168 L361.057146,195.562168 Z" id="path-1"></path>
+        <filter x="-46.2%" y="-30.0%" width="192.3%" height="160.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dark-/-mobil-/-post-/-pagination" transform="translate(-345.000000, -181.000000)" fill-rule="nonzero">
+            <g id="Icon-Path">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

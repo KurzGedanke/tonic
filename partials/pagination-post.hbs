@@ -1,27 +1,28 @@
 <aside class="content content__post">
-    {{#next_post}}
-        <hr />
-        <a href="{{url}}" title="{{title}}">
-            <section >
-                <h2>{{title}}</h2>
-                <p>{{excerpt words="12"}}&hellip;</p>
-                <p>
-                    <time datetime="{{date format='DD-MM-YYYY'}}">{{date format="DD MMM YYYY"}}</time>
-                </p>
-            </section>
-        </a>
-    {{/next_post}}
-    <hr />
-    {{#prev_post}}
-        <a href="{{url}}" title="{{title}}">
-            <section>
-                <h2>{{title}}</h2>
-                <p>{{excerpt words="12"}}&hellip;</p>
-                <p>
-                    <time datetime="{{date format='DD-MM-YYYY'}}">{{date format="DD MMM YYYY"}}</time>
-                </p>
-            </section>
-        </a>
-        <hr />
-    {{/prev_post}}
+    <div class="pagination-post">
+        {{#next_post}}
+                <a class="pagination-post__next" href="{{url}}" title="{{title}}">
+                    <span><img class="pagination-post__icon" src="{{asset "img/arrow_left.svg"}}" alt="icon arrow right"></span>
+                    <section>
+                        <h2>{{title}}</h2>
+                        <p>{{excerpt words="12"}}&hellip;</p>
+                        <p>
+                            <time datetime="{{date format='DD-MM-YYYY'}}">{{date format="DD MMM YYYY"}}</time>
+                        </p>
+                    </section>
+                </a>
+        {{/next_post}}
+        {{#prev_post}}
+                <a class="pagination-post__prev" href="{{url}}" title="{{title}}">
+                    <section>
+                        <h2>{{title}}</h2>
+                        <p>{{excerpt words="12"}}&hellip;</p>
+                        <p>
+                            <time datetime="{{date format='DD-MM-YYYY'}}">{{date format="DD MMM YYYY"}}</time>
+                        </p>
+                    </section>
+                    <span><img class="pagination-post__icon" src="{{asset "img/arrow_left.svg"}}" alt="icon arrow left"></span>
+                </a>
+        {{/prev_post}}
+    </div>
 </aside>

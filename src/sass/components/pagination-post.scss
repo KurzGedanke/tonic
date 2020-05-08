@@ -1,8 +1,37 @@
-.post-pagination {
-  margin: 0;
-  max-width: rem(768px);
+.pagination-post {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-top: rem(30px);
+
+  @include mq("phone-wide") {
+    flex-wrap: nowrap;
+  }
+
+  &__next {
+    margin: 0 rem(15px);
+    border-top: 2px solid $dark-text-transparent;
+    border-bottom: 2px solid $dark-text-transparent;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+    .pagination-post__icon {
+      rotate: 180deg;
+    }
+  }
+
+  &__prev {
+    margin: 0 rem(15px);
+    border-top: 2px solid $dark-text-transparent;
+    border-bottom: 2px solid $dark-text-transparent;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+  }
 }
