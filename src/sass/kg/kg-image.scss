@@ -4,6 +4,7 @@
   height: 75%;
   margin: rem(15px) 0;
   width: 75%;
+  transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
 
   &-card {
     align-items: center;
@@ -16,5 +17,10 @@
       color: $dark-text-transparent;
       font-size: rem(16px);
     }
+  }
+
+  &:hover {
+    height: 100%;
+    width: 100%;
   }
 }

@@ -1,6 +1,12 @@
 .kg-gallery {
   &-container {
     display: flex;
+    :hover {
+
+      .kg-gallery-image {
+        flex-basis: 100%;
+      }
+    }
   }
 
   &-row {
@@ -12,5 +18,6 @@
   &-image {
     margin: rem(10px);
     flex-basis: 35%;
+    transition: flex-basis 0.3s ease-in-out;
   }
 }
