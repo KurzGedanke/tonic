@@ -8,12 +8,13 @@
   }
 
   &__next {
-    margin: 0 rem(15px);
-    border-top: 2px solid $dark-text-transparent;
+    align-items: center;
     border-bottom: 2px solid $dark-text-transparent;
+    border-top: 2px solid $dark-text-transparent;
     display: flex;
     flex-flow: row;
-    align-items: center;
+    flex: 1;
+    margin: 0 rem(15px);
 
     .pagination-post__icon {
       rotate: 180deg;
@@ -21,17 +22,18 @@
   }
 
   &__prev {
-    margin: 0 rem(15px);
-    border-top: 2px solid $dark-text-transparent;
+    align-items: center;
     border-bottom: 2px solid $dark-text-transparent;
+    border-top: 2px solid $dark-text-transparent;
     display: flex;
     flex-flow: row;
-    align-items: center;
+    flex: 1;
+    margin: 0 rem(15px);
   }
 
   &__icon {
     display: inline-block;
-    width: 32px;
     height: 32px;
+    width: 32px;
   }
 }
