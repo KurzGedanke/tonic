@@ -16,6 +16,11 @@
     flex: 1;
     margin: 0 rem(15px);
 
+    @include light() {
+      border-bottom: 2px solid $light-text-transparent;
+      border-top: 2px solid $light-text-transparent;
+    }
+
     .pagination-post__icon {
       transform: rotate(180deg);
     }
@@ -29,6 +34,11 @@
     flex-flow: row;
     flex: 1;
     margin: 0 rem(15px);
+
+    @include light() {
+      border-bottom: 2px solid $light-text-transparent;
+      border-top: 2px solid $light-text-transparent;
+    }
   }
 
   &__icon {

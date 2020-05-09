@@ -3,4 +3,10 @@ h1 {
   font-family: $font-helvetica;
   font-size: rem(38px);
   font-weight: bold;
+  text-shadow: 0 0 rem(8px) $dark-shadow;
+
+  @include light() {
+    color: $light-text-white;
+    text-shadow: 0 0 0 $light-shadow;
+  }
 }

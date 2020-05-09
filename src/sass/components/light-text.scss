@@ -4,6 +4,10 @@
   font-size: rem(16px);
   line-height: 1;
 
+  @include light(){
+    color: $light-text-transparent;
+  }
+
   &--italic {
     font-style: italic;
   }

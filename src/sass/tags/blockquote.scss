@@ -9,4 +9,9 @@ blockquote {
   padding-top: rem(10px);
   padding-bottom: rem(10px);
   padding-left: rem(30px);
+
+  @include light(){
+    color: $light-text-white;
+    border-left: rem(2px) solid $light-pink;
+  }
 }

@@ -7,6 +7,10 @@
   flex: 1 1 301px;
   margin: rem(15px);
 
+  @include light() {
+    background: $light-background-blue;
+  }
+
   &__image {
     border-radius: rem(30px);
     border: rem(4px) solid rgb(248, 89, 154);
@@ -38,11 +42,19 @@
     margin-bottom: rem(5px);
     margin-top: rem(5px);
 
+    @include light() {
+      color: $light-text-transparent;
+    }
+
     a {
       &,
       &:visited {
         color: $dark-text-transparent;
         font-size: rem(14px);
+
+        @include light() {
+          color: $light-text-transparent;
+        }
       }
     }
   }

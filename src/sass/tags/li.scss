@@ -6,7 +6,15 @@ li {
   margin-bottom: rem(10px);
   padding: 0;
 
+  @include light() {
+    color: $light-text-white;
+  }
+
   &::marker {
     color: $dark-pink;
+
+    @include light() {
+      color: $light-pink;
+    }
   }
 }

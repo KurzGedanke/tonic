@@ -8,9 +8,18 @@ a {
     text-decoration: none;
     box-shadow: 0 0 0 $dark-pink;
     transition: box-shadow 0.5s ease-in-out;
+
+    @include light() {
+      color: $light-text-white;
+      box-shadow: 0 0 0 $light-pink;
+    }
   }
 
   &:hover {
     box-shadow: 0 rem(5px) 0 $dark-pink;
+
+    @include light() {
+      box-shadow: 0 rem(5px) 0 $light-pink;
+    }
   }
 }

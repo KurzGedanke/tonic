@@ -4,7 +4,7 @@
   justify-content: space-around;
   flex-flow: column;
 
-  @include mq ("tablet") {
+  @include mq("tablet") {
     flex-flow: row;
   }
 
@@ -19,6 +19,10 @@
     height: rem(50px);
     width: rem(150px);
     margin: rem(15px);
+
+    @include light() {
+      background: $light-background-blue;
+    }
   }
 
   &__info {
@@ -32,5 +36,9 @@
     height: rem(50px);
     width: rem(150px);
     margin: rem(15px);
+
+    @include light() {
+      background: $light-background-blue;
+    }
   }
 }

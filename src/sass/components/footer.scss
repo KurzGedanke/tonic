@@ -6,6 +6,11 @@
   justify-content: center;
   margin-top: rem(40px);
 
+  @include light() {
+    background-color: $light-background-blue;
+    box-shadow: 0 0 12px $light-shadow;
+  }
+
   &__inner {
     display: flex;
     flex-flow: column;

@@ -6,4 +6,9 @@ h5 {
   margin: rem(20px) 0;
   padding: 0;
   text-shadow: 0 0 rem(8px) $dark-shadow;
+
+  @include light(){
+    color: $light-text-white;
+    text-shadow: 0 0 0 $light-shadow;
+  }
 }

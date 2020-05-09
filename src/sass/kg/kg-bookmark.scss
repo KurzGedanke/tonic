@@ -55,13 +55,25 @@
 
   &-author {
     color: $dark-text-transparent;
+
+    @include light() {
+      color: $light-text-transparent;
+    }
   }
 
   &-description {
     color: $dark-text-transparent;
+
+    @include light() {
+      color: $light-text-transparent;
+    }
   }
 
   &-publisher {
     color: $dark-text-transparent;
+
+    @include light() {
+      color: $light-text-transparent;
+    }
   }
 }

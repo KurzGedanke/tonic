@@ -2,8 +2,15 @@ body {
   font-family: $font-helvetica;
   font-size: 16px;
   color: $dark-text-white;
-  background: rgb(26,33,51);
-  background-color: rgb(26,33,51);
-  background: linear-gradient(34deg, rgba(26,33,51,1) 0%, rgba(54,69,108,1) 100%);
+  background: rgb(26, 33, 51);
+  background-color: rgb(26, 33, 51);
+  background: linear-gradient(34deg, rgba(26, 33, 51, 1) 0%, rgba(54, 69, 108, 1) 100%);
   background-attachment: fixed;
+
+  @include light() {
+    color: $light-text-white;
+    background: $light-background-blue;
+    background-color: $light-background-blue;
+    background: linear-gradient(34deg, rgba(230, 230, 230, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  }
 }

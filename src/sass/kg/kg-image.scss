@@ -16,6 +16,10 @@
     figcaption {
       color: $dark-text-transparent;
       font-size: rem(16px);
+
+      @include light() {
+        color: $light-text-transparent;
+      }
     }
   }
 

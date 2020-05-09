@@ -45,6 +45,7 @@ $ grunt compress
 - [ ] Cookie Layer
 - [ ] Opt-In with third party media
 - [X] Tag Margin - DONE 
+- [X] Light Mode - DONE 09 May 2020
 
 ## Thank goes to:
 
