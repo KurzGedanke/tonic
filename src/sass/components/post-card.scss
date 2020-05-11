@@ -4,7 +4,7 @@
   box-shadow: 0 0 4px $dark-shadow;
   display: flex;
   flex-flow: column;
-  flex: 1 1 301px;
+  flex: 1 1 400px;
   margin: rem(15px);
 
   @include light() {
@@ -23,10 +23,6 @@
       height: rem(300px);
       margin: rem(15px) rem(15px) 0;
       position: relative;
-
-      @include mq('tablet') {
-        height: rem(200px);
-      }
     }
   }
 
