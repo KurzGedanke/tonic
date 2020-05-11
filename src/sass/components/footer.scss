@@ -1,5 +1,5 @@
 .footer {
-  background-color: $dark-background-blue;
+  background: $dark-background-blue;
   box-shadow: 0 0 12px $dark-shadow;
   display: flex;
   height: 200px;
@@ -7,8 +7,8 @@
   margin-top: rem(40px);
 
   @include light() {
-    background-color: $light-background-blue;
-    box-shadow: 0 0 12px $light-shadow;
+    background: $light-background-blue;
+    box-shadow: 0 0 0 $light-shadow;
   }
 
   &__inner {

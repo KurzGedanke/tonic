@@ -74,9 +74,14 @@
 
     a {
       &,
+      &:link,
       &:visited {
         color: $dark-text-transparent;
         font-size: rem(14px);
+
+        @include light() {
+          color: $light-text-transparent;
+        }
       }
     }
   }

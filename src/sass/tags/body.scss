@@ -10,7 +10,6 @@ body {
   @include light() {
     color: $light-text-white;
     background: $light-background-blue;
-    background-color: $light-background-blue;
-    background: linear-gradient(34deg, rgba(230, 230, 230, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background-color: white;
   }
 }

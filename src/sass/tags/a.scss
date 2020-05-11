@@ -1,5 +1,6 @@
 a {
   &,
+  &:link,
   &:visited {
     color: $dark-text-white;
     font-family: $font-helvetica;
