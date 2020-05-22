@@ -1,1 +1,2 @@
 "use strict";var headerButton=document.getElementById("header__button");headerButton.onclick=function(){var e=document.getElementById("header"),t=document.getElementById("header__navigation");e.classList.contains("header__menu")?(e.classList.remove("header__menu"),t.classList.add("hidden"),t.setAttribute("aria-expanded","false")):(e.classList.add("header__menu"),t.setAttribute("aria-expanded","true"),t.classList.remove("hidden"))};
+//# sourceMappingURL=script.js.map
