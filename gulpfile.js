@@ -31,7 +31,7 @@ function clean() {
 
 function copyStaticJS() {
   return gulp.src(paths.scripts.src + '/libs/**/*')
-    .pipe(gulp.dest(paths.scripts.dest + '/lib'))
+    .pipe(gulp.dest(paths.scripts.dest + '/libs'))
 }
 
 function copyStaticCSS() {
@@ -72,6 +72,11 @@ function scripts() {
     .pipe(gulp.dest(paths.scripts.dest))
 }
 
+function watchFiles() {
+  gulp.watch(paths.scripts.src + '/**/*.js', scripts)
+  gulp.watch(paths.styles.src + '/**/*.scss', style)
+}
+
 function zipIt() {
   return gulp.src([
     '**',
@@ -97,5 +102,6 @@ var script = gulp.parallel(scripts)
 var defaults = gulp.series(clean, copy, style, script)
 var compress = gulp.series(defaults, gulp.parallel(zipIt))
 
+exports.watch = watchFiles
 exports.compress = compress
 exports.default = defaults
