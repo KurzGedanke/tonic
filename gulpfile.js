@@ -91,7 +91,7 @@ function zipIt() {
     '!gulpfile.js',
     '!package-lock.json'
   ])
-    .pipe(zip('tonic2.zip'))
+    .pipe(zip('tonic.zip'))
     .pipe(gulp.dest('dest'))
 }
 

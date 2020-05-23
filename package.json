@@ -1,7 +1,7 @@
 {
-  "name": "tonic2",
-  "version": "1.0.10",
-  "description": "Tonic2 is a beautiful, mobile optimized, Ghost Theme",
+  "name": "tonic",
+  "version": "2.0.10",
+  "description": "Tonic is a beautiful, mobile optimized, Ghost Theme",
   "demo": "https://blog.kurzgedanke.me",
   "engines": {
     "ghost": ">=3.0.0",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KurzGedanke/tonic2.git"
+    "url": "git+https://github.com/KurzGedanke/tonic"
   },
   "keywords": [
     "ghost",
@@ -37,9 +37,9 @@
   },
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/KurzGedanke/tonic2/issues"
+    "url": "https://github.com/KurzGedanke/tonic/issues"
   },
-  "homepage": "https://github.com/KurzGedanke/tonic2#readme",
+  "homepage": "https://github.com/KurzGedanke/tonic#readme",
   "dependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
