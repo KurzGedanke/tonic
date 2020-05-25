@@ -1,4 +1,6 @@
 .checkbox-toggle {
+  position: relative;
+  display: flex;
 
   &__input {
     display: none;
@@ -39,6 +41,7 @@ input:checked + .checkbox-toggle__label {
   &:before {
     background: green;
   }
+
   &:after {
     left: 40px;
   }

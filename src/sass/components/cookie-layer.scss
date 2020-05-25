@@ -1,0 +1,65 @@
+.cookie-layer {
+  background: $dark-background-blue;
+  box-shadow: 0 0 12px $dark-shadow;
+  display: flex;
+  flex-flow: column;
+  max-width: rem(500px);
+  height: auto;
+  border-radius: rem(30px);
+  padding: rem(15px);
+
+  @include light() {
+    background: $light-background-blue;
+    box-shadow: 0 0 12px $light-shadow;
+  }
+
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+  }
+
+  &__checkboxen {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: rem(10px);
+    margin-bottom: rem(10px);
+
+    .checkbox-toggle {
+      margin-top: rem(10px);
+      margin-bottom: rem(10px);
+    }
+
+    @include mq("phone-wide") {
+      justify-content: space-around;
+      flex-flow: row;
+    }
+  }
+
+  &__selectButton {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: rem(10px);
+    margin-bottom: rem(10px);
+
+    button {
+      margin-top: rem(10px);
+      margin-bottom: rem(10px);
+    }
+
+    @include mq("phone-wide") {
+      justify-content: space-around;
+      flex-flow: row;
+    }
+  }
+}
