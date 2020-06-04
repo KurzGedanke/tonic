@@ -52,8 +52,8 @@ function initTracking() {
       _paq.push(['rememberConsentGiven']);
       console.log("OPT IN!");
     } else {
-      _paq.push(['optUserOut']);
       _paq.push(['disableCookies']);
+      _paq.push(['optUserOut']);
       console.log("OPT OUT!");
     }
 }
