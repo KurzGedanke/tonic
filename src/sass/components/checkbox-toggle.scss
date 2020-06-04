@@ -12,15 +12,19 @@
     cursor: pointer;
 
     &::before {
-      display: inline-block;
-      content: "";
-      position: relative;
-      width: 64px;
-      height: 32px;
-      background: rgb(4, 35, 76);
+      background: $dark-link-shadow;
       border-radius: 20px;
+      content: "";
+      display: inline-block;
+      height: 32px;
       margin-right: 5px;
+      position: relative;
       transition: background 0.3s ease-in;
+      width: 64px;
+
+      @include light() {
+        background: $light-link-shadow;
+      }
     }
 
     &::after {
@@ -33,13 +37,21 @@
       content: "";
       left: 10px;
       transition: left 0.3s ease-in;
+
+      @include light() {
+        background: white;
+      }
     }
   }
 }
 
 input:checked + .checkbox-toggle__label {
   &:before {
-    background: green;
+    background: $dark-pink;
+
+    @include light(){
+      background: $light-pink;
+    }
   }
 
   &:after {

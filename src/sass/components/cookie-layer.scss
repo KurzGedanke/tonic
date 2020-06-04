@@ -1,20 +1,24 @@
 .cookie-layer {
   background: $dark-background-blue;
+  border-radius: rem(30px);
+  border: rem(4px) solid $dark-pink;
   box-shadow: 0 0 12px $dark-shadow;
   display: flex;
   flex-flow: column;
-  max-width: rem(500px);
   height: auto;
-  border-radius: rem(30px);
+  max-width: rem(500px);
   padding: rem(15px);
+  z-index: 999;
 
   @include light() {
     background: $light-background-blue;
+    border: rem(4px) solid $light-pink;
     box-shadow: 0 0 12px $light-shadow;
   }
 
   &__wrapper {
-    align-items: center;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     height: 100%;
     justify-content: center;
@@ -23,6 +27,11 @@
     top: 0;
     width: 100%;
     z-index: 99;
+    overflow: scroll;
+
+    @include mq("phone-wide") {
+      align-items: center;
+    }
   }
 
   &__checkboxen {
@@ -62,4 +71,29 @@
       flex-flow: row;
     }
   }
+
+  p {
+    margin: 0;
+  }
+
+  .display-h1 {
+    margin: 0;
+  }
+
+  &__details__text {
+    max-height: rem(1000px);
+    overflow: hidden;
+    transition: max-height 1s ease-in-out, padding .5s ease-in-out;
+    padding-top: rem(10px);
+  }
+}
+
+.hide-it-details {
+  max-height: rem(0px);
+  padding: rem(0px);
+  transition: max-height 1s ease-in-out, padding .5s ease-in-out;
+}
+
+.hide-it {
+  display: none;
 }

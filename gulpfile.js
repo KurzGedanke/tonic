@@ -10,7 +10,8 @@ var babel = require('gulp-babel')
 var uglify = require('gulp-uglify')
 var cleanCSS = require('gulp-clean-css')
 var del = require('del')
-var zip = require('gulp-zip');
+var zip = require('gulp-zip')
+var concat = require('gulp-concat')
 
 sass.compiler = require('node-sass');
 
@@ -64,9 +65,10 @@ function styles() {
 }
 
 function scripts() {
-  return gulp.src(paths.scripts.src + '/script.js')
+  return gulp.src(paths.scripts.src + '/**/*.js')
     .pipe(sourcemaps.init())
     .pipe(babel())
+    .pipe(concat('script.js'))
     .pipe(uglify())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.scripts.dest))

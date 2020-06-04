@@ -1,4 +1,4 @@
-<div class="cookie-layer__wrapper">
+<div id="cookie-layer__wrapper" class="cookie-layer__wrapper hide-it">
     <div class="cookie-layer">
         <div class="cookie-layer__text">
             <p class="display-h1">Datenschutz und Cookies</p>
@@ -20,13 +20,20 @@
             </div>
         </div>
         <div class="cookie-layer__selectButton">
-            <button class="cookie-layer__selectButton__selectAll">Alle auswhälen</button>
-            <button class="cookie-layer__selectButton__selectSome">Auswahl speichern</button>
+            <button id="selectAllButton" class="cookie-layer__selectButton__selectAll">Alle auswhälen</button>
+            <button id="selectSomeButton" class="cookie-layer__selectButton__selectSome">Auswahl speichern</button>
         </div>
         <div class="cookie-layer__details">
-            <button>Details</button>
-            <div class="cookie-layer__details__text">
-
+            <button id="details_button">Details</button>
+            <div id="details-text" aria-expanded="false" class="cookie-layer__details__text hide-it-details">
+                <p class="display-h3">Analyse</p>
+                <p>Ich nutze ein Matomo (ehemals Piwik) um Analyse Daten zu bekommen wieviele Menschen meine Seite
+                    besuchen und welche Artikel gefragt sind. Das Matomo ist auf vollstände Privatsphäre Einstellung und
+                    so weit anonymisiert wie möglich. Ich kann keine rückschlüsse auf Sie oder andere Personen ziehen.
+                    Ich verkaufe diese Daten nicht.</p>
+                <p class="display-h3">Drittanbieter</p>
+                <p>Ich Binde inhalte von Dritten ein. Unter anderem von Youtube, Twitter, Vimeo, Flickr. Diese anbieter
+                    nutzen Cookies um Sie über verschiedene Seite zu Tracken.</p>
             </div>
         </div>
     </div>
