@@ -1,0 +1,14 @@
+button {
+  background-color: $dark-background-blue;
+  border-radius: rem(10px);
+  border: rem(3px) solid $dark-pink;
+  color: $dark-text-white;
+  cursor: pointer;
+  min-height: rem(50px);
+  min-width: rem(200px);
+
+  @include light() {
+    background-color: $light-background-blue;
+    color: $light-text-white;
+  }
+}

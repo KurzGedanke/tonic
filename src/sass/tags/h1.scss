@@ -10,3 +10,7 @@ h1 {
     text-shadow: 0 0 0 $light-shadow;
   }
 }
+
+.display-h1 {
+  @extend h1;
+}
