@@ -20,15 +20,22 @@ function selectSome() {
 }
 
 selectAllButton.onclick = function () {
+  checkBoxAnalysis.checked = true;
+  checkBoxThirdParty.checked = true;
   selectAll();
-  _paq.push(['setConsentGiven']);
-  checkCookieLayer();
+  setTimeout(checkCookieLayer, 1000);
+  setTimeout(reload, 1000);
 };
 
 selectSomeButton.onclick = function () {
   selectSome();
   checkCookieLayer();
+  reload();
 };
+
+function reload() {
+  window.location.reload(false);
+}
 
 function checkCookieLayer() {
   console.log("checkCookieLayer");
@@ -39,14 +46,23 @@ function checkCookieLayer() {
   }
 }
 
+function initTracking() {
+    var storage = store.get(localeStorageKey);
+    if (storage.tracking) {
+      _paq.push(['rememberConsentGiven']);
+      console.log("OPT IN!");
+    } else {
+      _paq.push(['optUserOut']);
+      _paq.push(['disableCookies']);
+      console.log("OPT OUT!");
+    }
+}
+
 function initCookieLayer() {
   console.log("INITCOOKIELAYER");
   checkCookieLayer();
+  initTracking();
 }
-
-document.addEventListener("DOMContentLoaded", function(event) {
-  //do work
-});
 
 function toggleDetails() {
   let detailsButton = document.getElementById('details_button');
