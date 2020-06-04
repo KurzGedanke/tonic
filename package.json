@@ -1,7 +1,7 @@
 {
-  "name": "tonic2",
-  "version": "1.0.10",
-  "description": "Tonic2 is a beautiful, mobile optimized, Ghost Theme",
+  "name": "tonic",
+  "version": "2.0.10",
+  "description": "Tonic is a beautiful, mobile optimized, Ghost Theme",
   "demo": "https://blog.kurzgedanke.me",
   "engines": {
     "ghost": ">=3.0.0",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KurzGedanke/tonic2.git"
+    "url": "git+https://github.com/KurzGedanke/tonic"
   },
   "keywords": [
     "ghost",
@@ -37,33 +37,33 @@
   },
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/KurzGedanke/tonic2/issues"
+    "url": "https://github.com/KurzGedanke/tonic/issues"
   },
-  "homepage": "https://github.com/KurzGedanke/tonic2#readme",
+  "homepage": "https://github.com/KurzGedanke/tonic#readme",
   "dependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "autoprefixer": "^9.7.6",
-    "grunt": "^1.0.4",
-    "grunt-babel": "^8.0.0",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-compress": "^1.6.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-uglify": "^3.3.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-postcss": "^0.9.0",
-    "grunt-sass": "^3.1.0",
+    "clean-css": "^4.2.3",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
     "gscan": "^3.5.3",
-    "load-grunt-tasks": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^5.0.1",
     "node-sass": "^4.14.0",
     "normalize-scss": "^7.0.1",
     "sass": "^1.26.5",
-    "sass-rem": "^2.0.1"
+    "sass-rem": "^2.0.1",
+    "store": "^2.0.12",
+    "uglify": "^0.1.5"
   },
-  "browserslist": [
-    "defaults"
-  ],
   "config": {
     "posts_per_page": 15,
     "image_sizes": {

@@ -12,3 +12,7 @@ h5 {
     text-shadow: 0 0 0 $light-shadow;
   }
 }
+
+.display-h5 {
+  @extend h5;
+}

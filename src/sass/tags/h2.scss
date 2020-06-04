@@ -13,3 +13,7 @@ h2 {
     text-shadow: 0 0 0 $light-shadow;
   }
 }
+
+.display-h2 {
+  @extend h2;
+}

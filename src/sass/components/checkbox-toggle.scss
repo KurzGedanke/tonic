@@ -1,0 +1,60 @@
+.checkbox-toggle {
+  position: relative;
+  display: flex;
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &::before {
+      background: $dark-link-shadow;
+      border-radius: 20px;
+      content: "";
+      display: inline-block;
+      height: 32px;
+      margin-right: 5px;
+      position: relative;
+      transition: background 0.3s ease-in;
+      width: 64px;
+
+      @include light() {
+        background: $light-link-shadow;
+      }
+    }
+
+    &::after {
+      border-radius: 50%;
+      position: absolute;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: white;
+      content: "";
+      left: 10px;
+      transition: left 0.3s ease-in;
+
+      @include light() {
+        background: white;
+      }
+    }
+  }
+}
+
+input:checked + .checkbox-toggle__label {
+  &:before {
+    background: $dark-pink;
+
+    @include light(){
+      background: $light-pink;
+    }
+  }
+
+  &:after {
+    left: 40px;
+  }
+}

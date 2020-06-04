@@ -32,6 +32,8 @@
     margin-top: rem(30px);
     position: fixed;
     z-index: 10;
+    min-height: 0;
+    min-width: 0;
   }
 
   &__hamburger {
