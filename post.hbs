@@ -5,7 +5,10 @@
         <div class="post__inner">
             <article class="content content__post">
                 <section class="post__header">
-                    <h1 class="post_tittle">{{title}}</h1>
+                    <h1 class="post__title">{{title}}</h1>
+                </section>
+                <section class="post__sub-line">
+                    <p class="post__sub-line__text light-text--italic">{{t "Published on"}} <time datetime="{{date format='DD-MM-YYYY'}}">{{date format="DD MMM YYYY"}}</time> in {{#primary_tag}}<a title="{{name}}" href="{{url}}">{{name}}</a>{{/primary_tag}}</p>
                 </section>
                 <figure class="post__image">
                     <img srcset="{{img_url feature_image size="s"}} 300w,
