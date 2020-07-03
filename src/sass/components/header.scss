@@ -1,9 +1,9 @@
 .header {
-  background-image: linear-gradient(0deg, rgba(248, 89, 154, 1) 0%, rgba(239, 70, 98, 1) 100%);
-  background: rgb(248, 89, 154);
+  background-image: linear-gradient(0deg, $dark-pink 0%, $dark-pink-red 100%);
+  background: $dark-pink;
   box-shadow: 0 0 12px $dark-shadow;
   display: block;
-  height: rem(105px);
+  height: rem(70px);
   width: 100%;
   z-index: 5;
 
@@ -26,7 +26,7 @@
     cursor: pointer;
     display: inline-block;
     margin-left: rem(30px);
-    margin-top: rem(30px);
+    margin-top: rem(14px);
     position: fixed;
     z-index: 10;
     min-height: 0;
@@ -41,7 +41,7 @@
     display: inline-block;
     filter: drop-shadow(0 0 4px $dark-shadow);
     margin-right: rem(30px);
-    margin-top: rem(30px);
+    margin-top: rem(14px);
     position: absolute;
     right: 0;
     width: rem(146px);
