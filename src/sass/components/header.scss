@@ -7,8 +7,6 @@
   width: 100%;
   z-index: 5;
 
-/*  transition: height .5s ease-in;*/
-
   &__menu {
     height: 100%;
     left: 0;
@@ -16,7 +14,6 @@
     top: 0;
     width: 100%;
     z-index: 5;
-/*    transition: height .5s ease-in;*/
   }
 
   .nav {
@@ -57,33 +54,16 @@
     height: 100%;
     z-index: 10;
 
-    /*    @include mq('tablet-wide') {
-          position: relative;
-          height: rem(105px);
-          margin-left: rem(80px);
-        }*/
-
     ul {
       display: flex;
       flex-flow: column;
       list-style: none;
-
-      /*      @include mq('tablet-wide') {
-              flex-flow: row;
-              margin: 0;
-              padding: 0;
-            }*/
 
       li {
         list-style-type: '— ';
         margin-bottom: rem(30px);
         margin-left: rem(5px);
         margin-right: rem(5px);
-
-        /*        @include mq('tablet-wide'){
-                  margin-bottom: 0;
-                  list-style-type: none;
-                }*/
 
         a {
           color: $dark-text-white;
