@@ -24,7 +24,7 @@
       &:visited {
         color: $dark-text-white;
         font-family: $font-helvetica;
-        font-size: rem(16px);
+        font-size: rem(18px);
         line-height: 1.125;
         text-decoration: none;
         box-shadow: 0 rem(3px) 0 $dark-pink;
@@ -44,6 +44,8 @@
   &__header {
     margin-left: rem(15px);
     margin-right: rem(15px);
+    display: flex;
+    justify-content: center;
   }
 
   &__tags {
@@ -89,6 +91,12 @@
         color: $light-text-transparent;
       }
     }
+  }
+
+  &__sub-line {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(25px);
   }
 
   img {

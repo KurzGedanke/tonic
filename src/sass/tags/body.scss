@@ -1,11 +1,12 @@
 body {
-  font-family: $font-helvetica;
-  font-size: 16px;
-  color: $dark-text-white;
-  background: rgb(26, 33, 51);
+  background-attachment: fixed;
   background-color: rgb(26, 33, 51);
   background: linear-gradient(34deg, rgba(26, 33, 51, 1) 0%, rgba(54, 69, 108, 1) 100%);
-  background-attachment: fixed;
+  background: rgb(26, 33, 51);
+  color: $dark-text-white;
+  font-family: $font-helvetica;
+  font-size: 16px;
+  word-break: break-word;
 
   @include light() {
     color: $light-text-white;
