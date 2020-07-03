@@ -38,7 +38,6 @@ function reload() {
 }
 
 function checkCookieLayer() {
-  console.log("checkCookieLayer");
   if (localStorage.getItem(localeStorageKey)) {
     cookieLayer.classList.add('hide-it');
   } else {
@@ -47,19 +46,16 @@ function checkCookieLayer() {
 }
 
 function initTracking() {
-    var storage = store.get(localeStorageKey);
-    if (storage.tracking) {
-      _paq.push(['rememberConsentGiven']);
-      console.log("OPT IN!");
-    } else {
-      _paq.push(['disableCookies']);
-      _paq.push(['optUserOut']);
-      console.log("OPT OUT!");
-    }
+  var storage = store.get(localeStorageKey);
+  if (storage.tracking) {
+    _paq.push(['rememberConsentGiven']);
+  } else {
+    _paq.push(['disableCookies']);
+    _paq.push(['optUserOut']);
+  }
 }
 
 function initCookieLayer() {
-  console.log("INITCOOKIELAYER");
   checkCookieLayer();
   initTracking();
 }
