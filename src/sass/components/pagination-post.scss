@@ -2,9 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: rem(30px);
+  flex-flow: column;
 
   @include mq("phone-wide") {
-    flex-wrap: nowrap;
+    flex-flow: row;
   }
 
   &__next {

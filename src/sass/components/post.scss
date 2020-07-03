@@ -93,10 +93,12 @@
     }
   }
 
-  &__sub-line {
+  &__byline {
     display: flex;
     justify-content: center;
     margin-bottom: rem(25px);
+    padding-left: rem(15px);
+    padding-right: rem(15px);
   }
 
   img {
