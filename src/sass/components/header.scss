@@ -1,82 +1,52 @@
 .header {
+  align-items: center;
+  background-color: $dark-pink;
   background-image: linear-gradient(0deg, $dark-pink 0%, $dark-pink-red 100%);
-  background: $dark-pink;
   box-shadow: 0 0 12px $dark-shadow;
-  display: block;
-  height: rem(70px);
-  width: 100%;
-  z-index: 5;
+  display: flex;
+  height: rem(50px);
+  justify-content: space-around;
+  left: 0;
+  padding-left: rem(15px);
+  padding-right: rem(15px);
+  position: sticky;
+  top: 0;
+  z-index: 99;
 
-  &__menu {
+  &__nav-open {
     height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 5;
-  }
-
-  .nav {
-    margin-left: rem(15px);
-  }
-
-  &__button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: rem(30px);
-    margin-top: rem(14px);
-    position: fixed;
-    z-index: 10;
-    min-height: 0;
-    min-width: 0;
-  }
-
-  &__hamburger {
-    filter: drop-shadow(0 0 4px $dark-shadow);
   }
 
   &__logo {
-    display: inline-block;
-    filter: drop-shadow(0 0 4px $dark-shadow);
-    margin-right: rem(30px);
-    margin-top: rem(14px);
-    position: absolute;
-    right: 0;
-    width: rem(146px);
-    z-index: 10;
-  }
+    height: rem(40px);
+    width: auto;
+    z-index: 90;
 
-  nav {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    z-index: 10;
-
-    ul {
-      display: flex;
-      flex-flow: column;
-      list-style: none;
-
-      li {
-        list-style-type: '— ';
-        margin-bottom: rem(30px);
-        margin-left: rem(5px);
-        margin-right: rem(5px);
-
-        a {
-          color: $dark-text-white;
-          font-size: rem(20px);
-          font-weight: bold;
-          text-decoration: none;
-          text-shadow: 0 0 4px $dark-shadow;
-        }
-      }
+    img {
+      height: inherit;
+      width: inherit;
     }
   }
-}
 
-.hidden {
-  display: none !important;
+  &__hamburger {
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, .5));
+    height: rem(40px);
+    width: auto;
+    z-index: 90;
+  }
+
+  &__button {
+    background-color: unset;
+    border-radius: 0;
+    border: none;
+    color: unset;
+    display: block;
+    min-height: 0;
+    min-width: 0;
+    z-index: 90;
+
+    @include mq("tablet") {
+      display: none;
+    }
+  }
 }

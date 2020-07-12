@@ -1,6 +1,6 @@
 .post-card {
-  background: rgb(26, 33, 51);
-  border-radius: rem(30px);
+  background: $dark-background-blue-light;
+  border-radius: rem(10px);
   box-shadow: 0 0 4px $dark-shadow;
   display: flex;
   flex-flow: column;
@@ -8,17 +8,17 @@
   margin: rem(15px);
 
   @include light() {
-    background: $light-background-blue;
+    background: $light-background-blue-light;
   }
 
   &__image {
-    border-radius: rem(30px);
+    border-radius: rem(10px);
     border: rem(4px) solid rgb(248, 89, 154);
     object-fit: cover;
     overflow: hidden;
 
     &--link {
-      border-radius: rem(30px);
+      border-radius: rem(10px);
       display: flex;
       height: rem(300px);
       margin: rem(15px) rem(15px) 0;

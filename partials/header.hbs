@@ -1,14 +1,14 @@
 <header id="header" class="header">
-    <button id="header__button" class="header__button"><img class="header__hamburger" src="{{asset "img/Hamburger.svg"}}"
-                                        alt="Hamburger Navigation Icon"></button>
     {{#if @site.logo}}
         <a class="header__logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}"/></a>
     {{else}}
         <a class="header__logo" href="{{@site.url}}">{{@site.title}}</a>
     {{/if}}
-    <nav id="header__navigation" class="header__navigation hidden">
+    <nav id="header__navigation" class="header__navigation" aria-expanded="true">
         {{#if @site.navigation}}
             {{navigation}}
         {{/if}}
     </nav>
+    <button id="header__button" class="header__button"><img class="header__hamburger" src="{{asset "img/Hamburger.svg"}}"
+                                                            alt="Hamburger Navigation Icon"></button>
 </header>
