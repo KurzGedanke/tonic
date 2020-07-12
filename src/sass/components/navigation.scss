@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+
+  [class^="nav-"] {
+    list-style: none;
+    padding: 0;
+    margin-left: rem(5px);
+    margin-right: rem(5px);
+
+    a {
+      &,
+      &:link,
+      &:visited {
+        color: white;
+        margin: 0 rem(5px);
+      }
+    }
+  }
+}
